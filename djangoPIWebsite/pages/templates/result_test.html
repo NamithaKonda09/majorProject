@@ -2,7 +2,8 @@
 {% block title  %}Test Results{% endblock %}
 {% block content %}
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts.js">
+</script>
 <!-- <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
 <br><br>
@@ -100,6 +101,9 @@ Highcharts.chart('container', {
   credits: {
       enabled: false
   },
+  colors: [
+  '#8EA4C8','#C3B8AA','#698396'
+    ],
   series: [{
       name: 'Purchase Intention',
       colorByPoint: true,
