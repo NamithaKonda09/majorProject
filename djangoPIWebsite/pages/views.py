@@ -98,7 +98,7 @@ def upload_test(request):
 
 def analysis(request):    
     from pages.data_analysis import output_to_analysis 
-    class_count, frequent_words, negative_tweets_str, positive_tweets_str = output_to_analysis("./datasets/AnnotatedData4.csv")
+    class_count, frequent_words, negative_tweets_str, positive_tweets_str = output_to_analysis("./datasets/TrainingAndTesting.csv")
     return render(request, "analysis.html", {"count":class_count,
     "word":frequent_words, "neg":negative_tweets_str, "pos":positive_tweets_str})
 
