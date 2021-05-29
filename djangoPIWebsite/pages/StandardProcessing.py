@@ -59,10 +59,6 @@ def report_results_log(model, X, y):
         "acc": acc,
         "precision": prec,
         "recall": rec,
-        "TN": tn,
-        "FP": fp,
-        "FN": fn,
-        "TP": tp,
         "True Negative rate": TrueNeg,
     }
     return result, pred
@@ -88,10 +84,6 @@ def report_results_svm(model, X, y):
         "acc": acc,
         "precision": prec,
         "recall": rec,
-        "TN": tn,
-        "FP": fp,
-        "FN": fn,
-        "TP": tp,
         "True Negative rate": TrueNeg,
     }
     return result, pred
@@ -116,10 +108,6 @@ def report_results(model, X, y):
         "acc": acc,
         "precision": prec,
         "recall": rec,
-        "TN": tn,
-        "FP": fp,
-        "FN": fn,
-        "TP": tp,
         "True Negative rate": TrueNeg,
     }
     return result, pred
